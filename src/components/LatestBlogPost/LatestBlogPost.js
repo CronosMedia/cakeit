@@ -5,7 +5,6 @@ import { Wrapper } from "./LatesBlogPost.styles"
 
 const LatestBlogPost = () => {
   const data = useLatestBlogPost()
-  console.log(data)
   return (
     <Wrapper>
       <h1>Latest blog post</h1>
@@ -15,7 +14,7 @@ const LatestBlogPost = () => {
           __html: data.allWpPost.edges[0].node.excerpt,
         }}
       />
-      <Link to={data.allWpPost.edges[0].node.uri}>
+      <Link to={`blog${data.allWpPost.edges[0].node.uri}`}>
         <h5>Read more</h5>
       </Link>
     </Wrapper>
