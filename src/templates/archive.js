@@ -22,7 +22,7 @@ const archiveTemplate = ({
 }) => (
   <Layout>
     <StaticImage
-      src="../images/archive_headerimage.png"
+      src="../images/archive_header.png"
       placeholder="TRACED_SVG"
       width={1920}
       height={300}
